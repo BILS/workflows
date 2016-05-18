@@ -60,9 +60,9 @@ outputs:
                 return inputs.p + ".amb"
               } else {
                 if (inputs._6 == true) {
-                  return inputs.input.path + ".64.amb"
+                  return inputs.input.path.split("/").pop() + ".64.amb"
                 } else {
-                  return inputs.input.path + ".amb"
+                  return inputs.input.path.split("/").pop() + ".amb"
                 }
               }
             }
@@ -71,10 +71,9 @@ outputs:
                 return inputs.p + ".ann"
               } else {
                 if (inputs._6 == true) {
-                  return inputs.input.path + ".64.ann"
+                  return inputs.input.path.split("/").pop() + ".64.ann"
                 } else {
-                  return inputs.input.path + ".ann"
-                }
+                  return inputs.input.path.split("/").pop()                }
               }
             }
           - ${
@@ -82,9 +81,9 @@ outputs:
                 return inputs.p + ".bwt"
               } else {
                 if (inputs._6 == true) {
-                  return inputs.input.path + ".64.bwt"
+                  return inputs.input.path.split("/").pop() + ".64.bwt"
                 } else {
-                  return inputs.input.path + ".bwt"
+                  return inputs.input.path.split("/").pop() + ".bwt"
                 }
               }
             }
@@ -93,9 +92,9 @@ outputs:
                 return inputs.p + ".pac"
               } else {
                 if (inputs._6 == true) {
-                  return inputs.input.path + ".64.pac"
+                  return inputs.input.path.split("/").pop() + ".64.pac"
                 } else {
-                  return inputs.input.path + ".pac"
+                  return inputs.input.path.split("/").pop() + ".pac"
                 }
               }
             }
@@ -104,9 +103,9 @@ outputs:
                 return inputs.p + ".sa"
               } else {
                 if (inputs._6 == true) {
-                  return inputs.input.path + ".64.sa"
+                  return inputs.input.path.split("/").pop() + ".64.sa"
                 } else {
-                  return inputs.input.path + ".sa"
+                  return inputs.input.path.split("/").pop() + ".sa"
                 }
               }
             }
