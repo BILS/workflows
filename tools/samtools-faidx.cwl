@@ -10,7 +10,6 @@ class: CommandLineTool
 
 requirements:
 - $import: envvar-global.yml
-- $import: samtools-docker.yml
 - class: InlineJavascriptRequirement
 - class: CreateFileRequirement
   fileDef:
