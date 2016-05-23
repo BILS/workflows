@@ -30,7 +30,7 @@ outputs:
 - id: "#index"
   type: File
   outputBinding:
-    glob: $(inputs.input.path.split('/').slice(-1)[0]) #+'.fai')
+    glob: $(inputs.input.path.split('/').slice(-1)[0] +'.fai')
   secondaryFiles:
   - .fai
   - .gzi
