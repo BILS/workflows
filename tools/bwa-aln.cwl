@@ -6,7 +6,6 @@ class: CommandLineTool
 
 requirements:
   - $import: envvar-global.yml
-  - $import: bwa-docker.yml
   - class: InlineJavascriptRequirement
 
 inputs:
