@@ -8,8 +8,8 @@ requirements:
   - $import: envvar-global.yml
   - class: InlineJavascriptRequirement
 
-hints:
-  - $import: bwa-docker.yml
+#hints:
+#  - $import: bwa-docker.yml
 
 inputs:
   - id: "prefix"
